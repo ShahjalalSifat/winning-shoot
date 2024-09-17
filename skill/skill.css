@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hwb(0 100% 0%);
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.relative {
+margin-top: 10px;
+
+}
+
+.mb-12 {
+    margin-top: 120px;
+}

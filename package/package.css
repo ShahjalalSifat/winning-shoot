@@ -1,0 +1,100 @@
+.hero3 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero3 img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+.hero3 .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+.package {
+    background: linear-gradient(135deg, #f6a365 0%, #fd8a05 100%);
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #f69335 0%, #fd7a05 100%);
+}
+.package h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.package p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.package .price {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.package button {
+    background-color: #fff;
+    color: #fd7a05;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    
+}
+.book-now-button {
+    text-decoration: none;
+    background-color: #fff;
+    color: #fd7a05;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s, transform 0.3s;
+
+}
+.package button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+.terms {
+    background: linear-gradient(135deg, #f6a365 0%, #fd8a05 100%);
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+.terms h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.terms p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
