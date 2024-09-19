@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winning Shoot</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Great+Vibes&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Great+Vibes&family=Oleo+Script:wght@400;700&family=Pacifico&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+
+
+    <script>
+        function sendWhatsAppMessage(event) {
+            event.preventDefault();
+            const firstName = document.querySelector('input[name="first_name"]').value;
+            const contactNo = document.querySelector('input[name="contact_no"]').value;
+            const eventDate = document.querySelector('input[name="event_date"]').value;
+            const address = document.querySelector('input[name="address"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const query = document.querySelector('textarea[name="query"]').value;
+
+            const message = `First Name: ${firstName}%0AContact No: ${contactNo}%0AEvent Date: ${eventDate}%0AAddress: ${address}%0AEmail: ${email}%0AQuery: ${query}`;
+            const whatsappUrl = `https://wa.me/8801688573068?text=${message}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Winning Shoot</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../package/package.html">Packages</a></li>
+                <li><a href="../skill/skill.html">Skills</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/winningshoot" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #9d6f41;"></i></a>
+                
+                <a href="https://youtube.com/@winningshoot?si=tuH07krtT5qphKbx"><i class="fa-brands fa-youtube" style="color: #9d6f41;"></i></a>
+                <a href="https://www.instagram.com/winning.shoot?igsh=ejF2bDQ1bTZvbWw3" target="_blank"><i class="fa-brands fa-instagram" style="color: #9d6f41;"></i></a>
+                <a href="https://wa.me/message/LOEUYNQBDIXAA1" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #9d6f41;"></i></a>
+              
+            </div>
+            <div class="buttons">
+                <a href="https://wa.me/message/LOEUYNQBDIXAA1" class="book-now">Book Now</a>
+                <a href="https://wa.me/message/LOEUYNQBDIXAA1" class="get-quote">Get A Quote</a>
+            </div>
+
+            <div class="newdiv">
+
+                <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+                <label for="menu-icon"></label>
+                <nav class="nav5">     
+                  <ul class="pt-5">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">About</a></li>
+                    <li><a href="../package/package.html">Packages</a></li>
+                    <li><a href="../skill/skill.html">Skills</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+            </div>
+    
+
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <div class="container70">
+        <div class="header70">
+            <img src="Group 2262.jpg" alt="A woman in a white dress standing by a lake with mountains in the background" width="1200" height="400"/>
+            <h1>C O N T A C T</h1>
+        </div>
+        <div class="content70">
+            <div class="contact-info70">
+                <h2>Get in touch</h2>
+                <p>We love to hear from you. Our friendly team is always here to chat.</p>
+                <p><i class="fas fa-comments"></i><strong>Chat to us</strong><br/>Our friendly team is here to help.<br/><a href="mailto:winningshootbd@gmail.com">winningshootbd@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i><strong>Office</strong><br/>Come say hello at our office HQ.<br/>Supha Chottor, Rangpur, Bangladesh</p>
+                <p><i class="fas fa-phone"></i><strong>Phone</strong><br/>Mon-Fri from 8am to 5pm.<br/><span id="phone1">+880 1648-573088</span>
+                    <i class="fas fa-copy copy-icon" onclick="copyToClipboard('phone1')"></i><br/> <span id="phone2">+880 1767-220087</span>
+                    <i class="fas fa-copy copy-icon" onclick="copyToClipboard('phone2')"></i></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/winningshoot"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/message/LOEUYNQBDIXAA1"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://youtube.com/@winningshoot?si=tuH07krtT5qphKbx"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form70">
+                <h2>Contact Form</h2>
+                <form onsubmit="sendWhatsAppMessage(event)">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" name="first_name" placeholder="First name" style="flex: 1;" required/>
+                        <input type="text" name="contact_no" placeholder="Contact No." style="flex: 1;" required/>
+                    </div>
+                    <input type="text" name="event_date" placeholder="Event Date" required/>
+                    <input type="text" name="address" placeholder="Address" required/>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <textarea name="query" placeholder="Any Query" rows="5" required></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.9133818060604!2d89.25181717272685!3d25.740377877365322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32df1b1c6bc45%3A0x6c8506d35c490ac2!2sShapla%20Chattar%2C%20Rangpur!5e0!3m2!1sen!2sbd!4v1726591305046!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+<div class="footer">
+    <div class="footer-content">
+     <div class="footer-logo">
+      <img alt="Winning Shoot Logo" height="100" src="Lovepik1.png" width="100"/>
+      <div>
+       Winning Shoot
+      </div>
+     </div>
+     <div class="footer-section">
+      <h3>
+       Winning Shoot
+      </h3>
+      <p>
+       In a professional context it often happens that private or corporate clients order a publication to be made and presented with the actual content still not being ready.
+      </p>
+      <br>
+      <button>
+       Explore More
+      </button>
+      <br> <br>
+      <button>
+       Contact Us
+      </button>
+     </div>
+     <div class="footer-section">
+      <h3>
+       Follow Us On Instagram
+      </h3>
+      <img alt="Instagram Image 1" height="100" src="Rectangle 95.png" width="100"/>
+      <img alt="Instagram Image 2" height="100" src="Rectangle 93.png" width="100"/>
+      <img alt="Instagram Image 3" height="100" src="Rectangle 92.png" width="100"/>
+      <img alt="Instagram Image 4" height="100" src="Rectangle 94.png" width="100"/>
+     <!--
+      <img alt="Instagram Image 5" height="100" src="Rectangle 95.png" width="100"/>
+      <img alt="Instagram Image 6" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-LmQ09WWGIGwOeeA4ArnRw0x5/user-uJPET5fjNenSso8wCETWVNOp/img-FrOULVJMKZGkdEBGEtkEzB58.png?st=2024-09-17T09%3A02%3A15Z&amp;se=2024-09-17T11%3A02%3A15Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-16T23%3A01%3A29Z&amp;ske=2024-09-17T23%3A01%3A29Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=JuXPJ2Rx8CVwx9B4T7LTMZN12T2yvdbFg610OsDqiiI%3D" width="100"/>
+    -->
+    </div>
+     <div class="footer-section">
+      <h3>
+       Subscribe Our Newsletter
+      </h3>
+      <input placeholder="Enter your email" type="email"/> <br> <br>
+      <button>
+       Join Now
+      </button>
+      <br> <br>
+      <h3>
+       Subscribe Our Newsletter
+      </h3>
+      <div class="social-icons1">
+       <a href="https://www.facebook.com/winningshoot" target="_blank" >
+        
+        <i class="fab fa-facebook-f">
+        </i>
+       </a>
+       <a href="https://youtube.com/@winningshoot?si=tuH07krtT5qphKbx" target="_blank">
+        <i class="fab fa-youtube">
+        </i>
+       </a>
+       
+       <a href="https://wa.me/message/LOEUYNQBDIXAA1" target="_blank">
+        <i class="fab fa-twitter">
+        </i>
+       </a>
+       <a href="https://www.instagram.com/winning.shoot?igsh=ejF2bDQ1bTZvbWw3" target="_blank">
+        <i class="fab fa-instagram">
+        </i>
+       </a>
+
+       <a href="https://wa.me/message/LOEUYNQBDIXAA1" target="_blank">
+        <i class="fab fa-whatsapp">
+        </i>
+       </a>
+
+      </div>
+     
+     </div>
+     <div class="footer-bottom">
+      © Copyright 2024 Winning Shoot <br> Email: winningshootbd@gmail.Com
+     </div>
+    </div>
+   </div>
+
+
+
+<script>
+    // Get the element with class 'newdiv'
+    const newdiv = document.querySelector('.newdiv');
+
+    // Store the last scroll position
+    let lastScrollTop = 0;
+
+    // Add an event listener for scroll
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // If scrolling down, hide the div
+            newdiv.classList.add('hidden');
+        } else {
+            // If scrolling up, show the div
+            newdiv.classList.remove('hidden');
+        }
+
+        // Update the last scroll position
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+
+
+
+
+
+
+    function copyToClipboard(elementId) {
+            var text = document.getElementById(elementId).innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("Copied to clipboard: " + text);
+        }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
